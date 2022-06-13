@@ -1,9 +1,16 @@
 package pages;
 
+import com.github.javafaker.Faker;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import utilities.Driver;
 
 public class HomePage {
+    public HomePage() {
+        PageFactory.initElements(Driver.getDriver(),this);
+    }
+
     //US_005 by Sevilay --
 
     @FindBy(xpath = "//select[@name='car']")
