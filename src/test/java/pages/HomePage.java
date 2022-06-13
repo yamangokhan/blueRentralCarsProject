@@ -32,8 +32,44 @@ public class HomePage {
     @FindBy(xpath = "//*[text()='Please first login']")
     public WebElement pleaseFirstLogin;
 
+//US-11 by yavuz-cemil
 
 
+    @FindBy(xpath = "((//a[@class='nav-link'])[4]")
+    public WebElement contact;
+
+    @FindBy(xpath = "(//div[@class='card-title h5'])[1]")
+    public WebElement cellCenter;
+
+    @FindBy(xpath = "(//div[@class='card-title h5'])[2]")
+    public WebElement makeReservation;
+
+    @FindBy(xpath = "(//div[@class='card-title h5'])[3]")
+    public WebElement cancelReservation;
+
+    @FindBy(xpath = "(//button[@class=\"btn btn-primary\"])[1]")
+    public WebElement subscribe;
+
+    @FindBy(xpath = "(//input[@class=\"form-control\"])[1]")
+    public WebElement textBoxt;
+
+    @FindBy(xpath = "(//input[@class=\"form-control\"])[2]")
+    public WebElement name;
+
+    @FindBy(xpath = "(//input[@class=\"form-control\"])[3]")
+    public WebElement phone;
+
+    @FindBy(xpath = "(//input[@class=\"form-control\"])[4]")
+    public WebElement eMail;
+
+    @FindBy(xpath = "(//button[@class=\"btn btn-primary\"])[2]")
+    public WebElement send;
+
+    @FindBy(xpath = "//textarea[@class=\"form-control\"]")
+    public WebElement comments;
+
+    @FindBy(xpath = "//a[@class=\"google-maps-link\"]")
+    public WebElement harita;
 
 
 
