@@ -1,78 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.293">
-    <testcase classname="US001 kullanici anasayfada login olmadan arac secmek ister" name="TC001 kullanici ana sayfada login olmadan arac rezervesyon islemlerini gerceklestirebilmeli" time="0.073">
-        <failure message="Failed to instantiate class stepDefinitions.BlueRentalCarsStepDefintions" type="io.cucumber.core.exception.CucumberException">
-            <![CDATA[Given user bluerentalCars sayfasinda........................................failed
-And user select a car menusunun fonksiyonel oldugunu test edebilmeli........skipped
-And user pick up satirina veri giris yapabilmeli............................skipped
-And user drop off satirina veri giris yapabilmeli...........................skipped
-And user Pick up date bolumune giris yapabilmeli............................skipped
-And user Pick up  time bolumune giris yapılabilmeli.........................skipped
-And user drop off  date bolumune giris yapılabilmeli........................skipped
-Then user drop off time bolumune giris yapılabilmeli........................skipped
-Then user Contınue Reservation Butonuna tıklayabilmeli......................skipped
-Then user "Please first login" yazısını görebilirligini kontrol eder........skipped
-
-StackTrace:
-io.cucumber.core.exception.CucumberException: Failed to instantiate class stepDefinitions.BlueRentalCarsStepDefintions
-	at io.cucumber.core.backend.DefaultObjectFactory.cacheNewInstance(DefaultObjectFactory.java:67)
-	at io.cucumber.core.backend.DefaultObjectFactory.getInstance(DefaultObjectFactory.java:45)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:95)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at io.cucumber.junit.Cucumber$RunBeforeAllHooks.evaluate(Cucumber.java:266)
-	at io.cucumber.junit.Cucumber$RunAfterAllHooks.evaluate(Cucumber.java:281)
-	at io.cucumber.junit.Cucumber$StartTestRun.evaluate(Cucumber.java:233)
-	at io.cucumber.junit.Cucumber$FinishTestRun.evaluate(Cucumber.java:248)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)
-	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
-	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
-Caused by: java.lang.reflect.InvocationTargetException
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at io.cucumber.core.backend.DefaultObjectFactory.cacheNewInstance(DefaultObjectFactory.java:53)
-	... 44 more
-Caused by: java.lang.NullPointerException
-	at utilities.Driver.getDriver(Driver.java:43)
-	at pages.BlueRentalCarsPage.<init>(BlueRentalCarsPage.java:14)
-	at stepDefinitions.BlueRentalCarsStepDefintions.<init>(BlueRentalCarsStepDefintions.java:15)
-	... 49 more
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="13.189">
+    <testcase classname="US011 kullanici contactUs sayfasini kontrol edebilir" name="TC01 kullanici cagri merkezi ve rezarvasyon  menusunu kullanabilir" time="12.695">
+        <system-out>
+            <![CDATA[Given kullanici "BlueRentaCarURL" sitesine gider............................passed
+And kullanici contact butonunun görünür oldugunu ve tiklanabilir oldugunu test eder.passed
+And kullanici call center,make reservation,cancel reservation text'lerinin görünür oldugunu dogrular.passed
+Then type your email text box tiklanabilir oldugunu test eder...............passed
+Then kullanici subscribe buttonunu görünür oldugunu ve tıklanabilirligini dogrular.passed
+When haritanin görünür oldugunu ve fonksiyonel oldugunu test eder...........passed
+Then kullanici name,phone,emailaddress,comments textbox'ların tiklanabilir oldugunu ve veri girildgini dogrular.passed
+And kullanici Send buttonun görünür oldugunu ve tiklanabilir oldugunu test eder.passed
+And kullanici gönderilen mailin dogrulugunu test eder.......................passed
 ]]>
-        </failure>
+        </system-out>
     </testcase>
 </testsuite>
