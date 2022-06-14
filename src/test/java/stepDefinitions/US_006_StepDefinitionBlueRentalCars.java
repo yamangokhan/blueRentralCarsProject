@@ -7,7 +7,7 @@ import pages.HomePage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-    public class BlueRentalCarsStepdefinitions {
+    public class US_006_StepDefinitionBlueRentalCars {
         HomePage homePage = new HomePage();
 
 

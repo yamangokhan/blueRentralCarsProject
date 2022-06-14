@@ -2,12 +2,8 @@ package stepDefinitions;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
-import pages.HomePage;
-import utilities.ConfigReader;
-import utilities.Driver;
 
-public class ReservationWithoutLogin {
+public class US_005_StepDefinitionReservationWithoutLogin {
     @Given("kullanici BlueRentaCarURL sitesine gider")
     public void kullanici_blue_renta_car_url_sitesine_gider() {
 
