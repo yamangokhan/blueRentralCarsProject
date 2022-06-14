@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+# deneme gokhan
+  #fatih turker
+Feature:
+=======
 Feature: US 1007 Kullanici reservation islemini gerceklestirir
 
   Scenario:TC01 Başarılı reservasyon işlemi sonrası kullanıcı açılan sayfada "Complete Reservation" yazısı icerdigini doğrular
@@ -99,3 +104,4 @@ Feature: US 1007 Kullanici reservation islemini gerceklestirir
     Given
     Then
     And
+>>>>>>> origin/master
