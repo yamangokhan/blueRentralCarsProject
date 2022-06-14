@@ -1,5 +1,5 @@
 Feature: US006 kullanici profil sayfasini kontrol edebilir
-@blue
+  @blue
   Scenario: TC01 kullanici dropdown menusunu kullanabilir
 
     Given kullanici "BlueRentaCarURL" sitesine gider
@@ -10,6 +10,3 @@ Feature: US006 kullanici profil sayfasini kontrol edebilir
     Given kullanici pick up satirina kayitli yer secer
     Given Kullanıcı anasayfada bulunan Drop Off satirinin gorunur oldugunu test eder
     Given kullanici Drop Off satirina kayitli yer secer
-
-
-

@@ -11,12 +11,18 @@ public class HomePage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
-    //US_005 by Sevilay --
+
+
+        // US006 Oguzhan-Fatih
 
     @FindBy(xpath = "//select[@name='car']")
-    public WebElement dropDown;
+    public WebElement select;
     @FindBy(xpath = "//input[@name='pickUpLocation']")
-    public WebElement pickUpDropDown;
+    public WebElement pickUp;
+    @FindBy(xpath = "//input[@name='dropOfLocation']")
+    public WebElement DropOff;
+/*
+
     @FindBy(xpath = "//input[@title='Drop Off']")
     public WebElement pickUpDropOff;
     @FindBy(xpath = "//input[@name='pickUpDate']")
@@ -31,10 +37,8 @@ public class HomePage {
     public WebElement continueReservation;
     @FindBy(xpath = "//*[text()='Please first login']")
     public WebElement pleaseFirstLogin;
-
-
-
-
+}
+*/
     // merhaba
 
 
