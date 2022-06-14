@@ -27,12 +27,6 @@ public class HomePage {
     @FindBy(xpath =" //b[contains(text(),'Phone')]")
     public WebElement phone;
 
-    @FindBy(xpath ="//b[text()='Pick-Up Time']")
-    public WebElement pickUpTime;
-
-    @FindBy(xpath ="//b[text()='Drop-Off Time']")
-    public WebElement dropOffTime ;
-
     @FindBy(xpath ="//div[text()='Total price: $']")
     public WebElement totalPrice;
 
@@ -75,9 +69,6 @@ public class HomePage {
     @FindBy(xpath ="//button[text()=' Back to reservations']")
     public WebElement backToReservation ;
 
-    public HomePage() {
-        PageFactory.initElements(Driver.getDriver(),this);
-    }
 
     //US_005 by Sevilay --
 
@@ -120,12 +111,6 @@ public class HomePage {
 
     @FindBy(xpath = "(//input[@class=\"form-control\"])[1]")
     public WebElement textBoxt;
-
-    @FindBy(xpath = "(//input[@class=\"form-control\"])[2]")
-    public WebElement name;
-
-    @FindBy(xpath = "(//input[@class=\"form-control\"])[3]")
-    public WebElement phone;
 
     @FindBy(xpath = "(//input[@class=\"form-control\"])[4]")
     public WebElement eMail;
