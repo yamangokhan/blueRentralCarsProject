@@ -1,3 +1,12 @@
+#   Kullanıcı profil sayfasını test edebilmeli	Kullanıcı verilen bilgiler ile siteye giriş yaptıktan sonra ismi yazılı dropdown menüsünün fonksiyonel olduğunu test etmeli
+#	Kullanıcı "Profile" butonuna tıklayarak kendi profilin sayfasına gidebilmeli
+#	Kullanıcı açılan sayfada Profile başılığı altında; 1- First Name, 2- Last Name, 3- Phone Number, 4- Email, 5- Address, 6- Zip Code text boxlarının tıklanabilir olduğu görebilmeli
+#	Kullanıcı yapılan değişiklik sonrası SAVE butonunn tıklanabilir ve fonksiyonel olduğunu test edebilmeli
+#	Kullanıcı açılan sayfada Update Password başılığı altında; 1- Old Password, 2- New Password, 3 -New Password(Retry)  text boxlarının tıklanabilir ve fonksiyonel olduğu görebilmeli
+#	Kullanıcı yapılan islem sonrası guncel bilgilerinin görünürlüğü test edebilmeli
+
+  # Mehmet Eren ERGİN
+
 Feature: US012 kullanici profil sayfasini kontrol edebilir
 
   Scenario: TC01 kullanici dropdown menusunu kullanabilir
