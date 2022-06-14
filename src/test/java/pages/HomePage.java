@@ -124,7 +124,30 @@ public class HomePage {
     @FindBy(xpath = "//a[@class=\"google-maps-link\"]")
     public WebElement harita;
 
-    // değişiklik
+
+
+    //mustafa-emre
+    @FindBy(xpath = "//a[@href='/login']")
+    public WebElement loginButton;
+
+
+    @FindBy(xpath="//input[@id='formBasicEmail']")
+    public WebElement loginEmailBox;
+
+
+    @FindBy(xpath = "//input[@id='formBasicPassword']")
+    public WebElement loginPasswordBox;
+
+    @FindBy(xpath = " //button[@class='btn btn-primary']")
+    public WebElement loginOnayButton;
+
+    @FindBy(xpath ="//button[@id='dropdown-basic-button']")
+    public WebElement nameDropdownButton;
+
+    @FindBy(xpath = "//a[text()='Reservations']")
+    public WebElement reservationDropdownButton;
+
+
 
 
     // merhaba

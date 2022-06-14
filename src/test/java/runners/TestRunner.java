@@ -13,11 +13,10 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features",
         glue = "stepDefinitions",
-sevil
+//sevil
         tags = "@About",
 
-        tags = "@About",
- master
+ //master
         dryRun = true
 )
 
