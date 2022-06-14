@@ -124,6 +124,8 @@ public class HomePage {
     @FindBy(xpath = "//a[@class=\"google-maps-link\"]")
     public WebElement harita;
 
+    // değişiklik
+
 
 
 
