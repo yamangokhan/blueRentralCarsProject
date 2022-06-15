@@ -176,6 +176,13 @@ public WebElement loginButton;
     @FindBy(xpath = "(//a[@class='nav-link'])[4]")
     public WebElement contactBaslik;
 
+    //Huseyin
+    @FindBy(xpath="//h2[text()='What do we offer?']")
+    public WebElement whatDoWeOffer;
+
+    @FindBy(xpath = "//div[@class=\"mt-2 row\"]")
+    public WebElement ourPartners;
+
 
 
 
