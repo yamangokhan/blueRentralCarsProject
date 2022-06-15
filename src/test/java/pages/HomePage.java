@@ -130,7 +130,8 @@ public class HomePage {
     @FindBy(xpath = "//input[@name='dropOfLocation']")
     public WebElement DropOff;
 
-    //git hub yollama
+    //silme
+
 
 }
 
