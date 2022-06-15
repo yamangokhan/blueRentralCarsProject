@@ -3,7 +3,7 @@ package stepDefinitions;
 import io.cucumber.java.en.Given;
 import pages.HomePage;
 
-public class AboutStepDefinitions {
+public class US_010_StepDefinitionAbout {
     HomePage homePage = new HomePage();
 
     @Given("kullanici About Us  butonunu gorur ve tiklar")

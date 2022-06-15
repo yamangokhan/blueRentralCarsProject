@@ -1,3 +1,19 @@
+#Kullanıcı site anasayfasında reservation işlemini başarıyla gerçekleştirebilmeli	Select a car dropdown menu fonsiyonel olmalı
+#Pick up satırına veri girişii yapılabilmeli ve kayıtlı yer seçilebilmeli
+#Drop Off satırına veri girişi yapılabilmeli ve kayıtlı yer seçilebilmeli
+#Pick up tarih bölümüne manuel veri girişi yapılabilmeli ve takvimden tarih seçilebilmeli
+#Pick up saat bölümüne manuel veri girişi yapılabilmeli ve zaman çizelgesinden saat seçilebilmeli
+#Drop Off tarih bölümüne manuel veri girişi yapılabilmeli ve takvimden tarih seçilebilmeli
+#Drop Off saat bölümüne manuel veri girişi yapılabilmeli ve zaman çizelgesinden saat seçilebilmeli
+#Contınue Reservation Butonu tıklanabilir görünür olmalı
+#Kullanıcı reservasyon işleminin başarıyla gerçekleştirdiğini doğrular.
+
+# Oguzhan ve Fatih bey
+
+
+
+
+
 Feature: US006 kullanici profil sayfasini kontrol edebilir
   @blue
   Scenario: TC01 kullanici dropdown menusunu kullanabilir
