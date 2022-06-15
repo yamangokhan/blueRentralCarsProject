@@ -5,9 +5,8 @@ import io.cucumber.java.en.Given;
 import org.junit.Assert;
 import pages.HomePage;
 import utilities.ConfigReader;
-import utilities.Driver;
 
-public class LoginFirstPageDefinitions {
+public class US_004StepDefinitionsLoginFirstPage {
 HomePage homPage=new HomePage();
 
     @Given ("kullanici verilen email ve passwordla giris yapar")
