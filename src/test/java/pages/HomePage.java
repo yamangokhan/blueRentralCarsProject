@@ -129,6 +129,55 @@ public class HomePage {
     public WebElement pickUp;
     @FindBy(xpath = "//input[@name='dropOfLocation']")
     public WebElement DropOff;
+//
+//
+    //US_04 MUSTAFA-EMRE
+@FindBy(xpath = "//a[@href='/login']")
+public WebElement loginButton;
+
+
+    @FindBy(xpath="//input[@id='formBasicEmail']")
+    public WebElement loginEmailBox;
+
+
+    @FindBy(xpath = "//input[@id='formBasicPassword']")
+    public WebElement loginPasswordBox;
+
+    @FindBy(xpath = " //button[@class='btn btn-primary']")
+    public WebElement loginOnayButton;
+
+    @FindBy(xpath ="//button[@id='dropdown-basic-button']")
+    public WebElement nameDropdownButton;
+
+    @FindBy(xpath = "//a[text()='Reservations']")
+    public WebElement reservationDropdownButton;
+
+    @FindBy(xpath = "(//li[@class='d-none d-md-block'])[1]")
+    public WebElement youtubeIkonu;
+
+    @FindBy(xpath = "(//li[@class='d-none d-md-block'])[2]")
+    public WebElement facebookIkonu;
+
+    @FindBy(xpath = "(//li[@class='d-none d-md-block'])[3]")
+    public WebElement twitterIkonu;
+
+
+    @FindBy(xpath = "(//li[@class='d-none d-md-block'])[4]")
+    public WebElement instagramIkonu;
+
+    @FindBy(xpath = "(//a[@class='nav-link'])[1]")
+    public WebElement homeBaslik;
+    @FindBy(xpath = "(//a[@class='nav-link'])[2]")
+    public WebElement servicesBaslik;
+
+    @FindBy(xpath = "(//a[@class='nav-link'])[3]")
+    public WebElement aboutUsBaslik;
+
+    @FindBy(xpath = "(//a[@class='nav-link'])[4]")
+    public WebElement contactBaslik;
+
+
+
 
 
 
