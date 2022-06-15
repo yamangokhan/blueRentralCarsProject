@@ -7,7 +7,7 @@ import pages.HomePage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-public class ContactStepDefinitions {
+public class US_011_StepDefinitionContact {
 HomePage pgs = new HomePage();
     @Given("kullanici {string} sitesine gider")
     public void kullanici_sitesine_gider(String string) {
