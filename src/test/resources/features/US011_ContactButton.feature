@@ -11,7 +11,7 @@
 
 
 Feature: US011 kullanici contactUs sayfasini kontrol edebilir
-@Contact
+  @Contact
   Scenario: TC01 kullanici cagri merkezi ve rezarvasyon  menusunu kullanabilir
 
 
