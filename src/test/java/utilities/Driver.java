@@ -58,6 +58,7 @@ public class Driver {
                     WebDriverManager.edgedriver().setup();
                     driver = new EdgeDriver(new EdgeOptions().setHeadless(true));
                     break;
+
                 default:
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();
@@ -80,3 +81,58 @@ public class Driver {
     }
 
 }
+
+/*
+ private Driver(){
+
+    }
+    static WebDriver driver;
+
+    public static WebDriver getDriver(){
+        if (driver==null) {
+            switch(ConfigReader.getProperty("browser")){
+
+                // case"chrome":
+                //   WebDriverManager.chromedriver().setup();
+                //   driver = new ChromeDriver();
+                // break;
+
+                case"safari":
+                    WebDriverManager.safaridriver().setup();
+                    driver = new SafariDriver();
+                    break;
+
+                case"firefox":
+                    WebDriverManager.firefoxdriver().setup();
+                    driver = new FirefoxDriver();
+                    break;
+
+                // headless-chrome Crome açılmadan testleri yapıyormuş
+                case "headless-chrome":
+                    WebDriverManager.chromedriver().setup();
+                    driver = new ChromeDriver(new ChromeOptions().setHeadless(true));
+                    break;
+
+                case "chrome":
+                default:
+                    WebDriverManager.chromedriver().setup();
+                    driver = new ChromeDriver();
+                    break;
+
+            }
+
+
+            driver.manage().window().maximize();
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+        }
+        return driver;
+    }
+    public static void closeDriver(){
+        if (driver!=null){ // driver'a deger atanmissa
+            driver.close();
+            driver=null;
+        }
+    }
+}
+
+ */
