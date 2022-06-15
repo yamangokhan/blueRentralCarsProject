@@ -9,8 +9,8 @@ import utilities.Driver;
 
 public class US_011_StepDefinitionContact {
 HomePage pgs = new HomePage();
-    @Given("kullanici {string} sitesine gider")
-    public void kullanici_sitesine_gider(String string) {
+    @Given("kullanici {string} sitesine giderr")
+    public void kullanici_sitesine_giderr(String string) {
         Driver.getDriver().get(ConfigReader.getProperty("BlueRentaCarURL"));
     }
     @Given("kullanici contact butonunun görünür oldugunu ve tiklanabilir oldugunu test eder")
