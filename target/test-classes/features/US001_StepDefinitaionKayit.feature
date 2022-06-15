@@ -9,7 +9,6 @@
       #İlgili bilgiler ile form dolduruldugunda kullanıcı Contınue Reservation Butonu tıkladığında "Please first login" yazısını görebilmeli
 
 
-
       @blue
       Feature:US001 kullanici anasayfada login olmadan arac secmek ister
 
