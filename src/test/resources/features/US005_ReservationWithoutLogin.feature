@@ -16,7 +16,7 @@ Feature: US005 Kullanıcı başarız arac reservasyon işlemini test edebilmeli
   Scenario: TC01 Kullanıcı başarız arac reservasyon işlemini test edebilmeli
 
 
-    Given kullanici BlueRentaCarURL sitesine gider
+    Given kullanici "BlueRentaCarURL" sitesine gider
     And  kullanici dropdown butonundan araç seçer
     And  kullanici Pick up satırından kayıtlı yer seçer
     Then kullanici Drop Off satırından kayıtlı yer seçer
