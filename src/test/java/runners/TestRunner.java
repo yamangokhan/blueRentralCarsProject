@@ -13,8 +13,8 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features",
         glue = "stepDefinitions",
-        tags = "@gittigidiyor",
-        dryRun = true
+        tags = "@loginFirstPage",
+        dryRun = false
 )
 
 public class TestRunner {
