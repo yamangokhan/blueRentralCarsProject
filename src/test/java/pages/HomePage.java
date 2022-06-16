@@ -15,7 +15,7 @@ public class HomePage {
     @FindBy(xpath = "//*[text()='Complete Reservation']")
     public WebElement completeReservation;
 
-    @FindBy(xpath = " //b[contains(text(),'Name')]")
+    @FindBy(xpath = "//b[contains(text(),'Name')]")
     public WebElement name;
 
     @FindBy(xpath = "//b[contains(text(),'Address')]")
@@ -91,7 +91,7 @@ public class HomePage {
 //US_011 by yavuz-cemil
 
 
-    @FindBy(xpath = "((//a[@class='nav-link'])[4]")
+    @FindBy(xpath = "//a[@class='nav-link'][normalize-space()='Contact']")
     public WebElement contact;
 
     @FindBy(xpath = "(//div[@class='card-title h5'])[1]")
@@ -118,8 +118,11 @@ public class HomePage {
     @FindBy(xpath = "//textarea[@class=\"form-control\"]")
     public WebElement comments;
 
-    @FindBy(xpath = "//a[@class=\"google-maps-link\"]")
+    @FindBy(xpath = "//a[@class='nav-link'][normalize-space()='Contact']")
     public WebElement harita;
+
+    @FindBy(xpath = "(//input[@placeholder='name@example.com'])[1]")
+    public WebElement contactName;
 
 // US_006 Oguzhan-Fatih
 
