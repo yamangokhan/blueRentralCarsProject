@@ -129,4 +129,50 @@ public class HomePage {
     public WebElement whatDoWeOffer;
     @FindBy(xpath = "//div[@class=\"mt-2 row\"]")
     public WebElement ourPartners;
+
+    //Zeynep US_003_yeni_kullanici
+    @FindBy(xpath = "//a[normalize-space()='Login']")
+    public WebElement LoginAnasayfa;
+    @FindBy(xpath = "//a[contains(text(),'Create new user')]")
+    public WebElement CreatNewUser;
+    @FindBy(xpath = "//button[contains(text(),'Login')]")
+    public WebElement LoginButton;
+    @FindBy(xpath = "//h1[contains(text(),'Register')]")
+    public WebElement RegisterText;
+    @FindBy(xpath = "//input[@name='firstName']")
+    public WebElement FirstName;
+    @FindBy(xpath = "//input[@name='lastName']")
+    public WebElement LastName;
+    @FindBy(xpath = "//input[@name='phoneNumber']")
+    public WebElement PhoneNumber;
+    @FindBy(xpath = "//input[@name='address']")
+    public WebElement AdresBox;
+    @FindBy(xpath = "//input[@name='email']")
+    public WebElement email;
+    @FindBy(xpath = "//input[@name='zipCode']")
+    public WebElement ZipCode;
+    @FindBy(xpath = "//input[@name='password']")
+    public WebElement Password;
+    @FindBy(xpath = "//input[@name='confirmPassword']")
+    public WebElement PasswordConfirm;
+    @FindBy(xpath = "//button[@class='btn btn-primary']")
+    public WebElement RegisterButton;
+    @FindBy(xpath = "//div[contains(text(),'Please enter your first name')]")
+    public WebElement Alertfirstname;
+    @FindBy(xpath = " //div[contains(text(),'Please enter your last name')]")
+    public WebElement AlertLastname;
+    @FindBy(xpath = "//div[contains(text(),'Please enter your phone number')]")
+    public WebElement AlertPhone;
+    @FindBy(xpath = "//div[contains(text(),'Please enter your address')]")
+    public WebElement AlertAdres;
+    @FindBy(xpath = "//div[contains(text(),'Please enter your zip code')]")
+    public WebElement AlertZipcode;
+    @FindBy(xpath = "//div[contains(text(),'Please enter your email')]")
+    public WebElement AlertMail;
+    @FindBy(xpath = "//div[normalize-space()='Please enter your password']")
+    public WebElement AlertPossword;
+    @FindBy(xpath = "//div[normalize-space()='Please enter your password again']")
+    public WebElement AlaertConfirmPassword;
+    @FindBy(xpath = "//div[contains(text(),'You are registered successfully.')]")
+    public  WebElement successfully;
 }
