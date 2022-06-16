@@ -21,3 +21,6 @@ Feature: US006 kullanici profil sayfasini kontrol edebilir
     Given Kullanıcı anasayfada bulunan Continue Reservation satirinin gorunur oldugunu test eder
     Given kullanici Continue Reservation butonuna tiklar
     Given pleaseFirstLogin gorunur oldugunu test eder
+
+
+
