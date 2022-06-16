@@ -24,7 +24,6 @@ Feature:Kullanici verilen bilgilerle anasayfaya giris yapabilmeli
     And ismi yazili dropdown menusunu test eder
     And sosyal medya ikonlarinin görunurlugunu test eder
     And home,services,About Us ve Contact  calisitigini test eder
-
     And Bluerentalcars logosunun gorunur oldugunu test eder
     And Call Us textin gorunur oldugubu test eder
     And Degisen araclar gorselinin calisip calismadigini test eder
