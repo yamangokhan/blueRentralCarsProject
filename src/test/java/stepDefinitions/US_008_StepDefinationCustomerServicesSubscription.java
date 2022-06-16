@@ -11,10 +11,10 @@ public class US_008_StepDefinationCustomerServicesSubscription {
     HomePage homePage=new HomePage();
     @Given("Kullanıcı Custemer Services Başliğini görür")
     public void kullanıcı_custemer_services_başliğini_görür() throws InterruptedException {
-     JavascriptExecutor jse=(JavascriptExecutor) Driver.getDriver();
-     jse.executeScript("arguments[0].scrollIntoView(true)",homePage.customerServices);
-     Thread.sleep(2000);
-     //ayrıca tüm alt basliklar  görülüyor.
+        JavascriptExecutor jse=(JavascriptExecutor) Driver.getDriver();
+        jse.executeScript("arguments[0].scrollIntoView(true)",homePage.customerServices);
+        Thread.sleep(2000);
+        //ayrıca tüm alt basliklar  görülüyor.
 
 
     }
@@ -28,11 +28,11 @@ public class US_008_StepDefinationCustomerServicesSubscription {
     }
     @Given("Kullanıcı Custemer Services Başliğinin altinda No Extra Price başlıgini görünür oldugunu test eder")
     public void kullanıcı_custemer_services_başliğinin_altinda_no_extra_price_başlıgini_görünür_oldugunu_test_eder() {
-       Assert.assertTrue(homePage.noExtraPrice.isDisplayed());
+        Assert.assertTrue(homePage.noExtraPrice.isDisplayed());
     }
     @Given("Kullanıcı Custemer Services Başliğinin altinda Hygienic Car  başlıgini görünür oldugunu test eder")
     public void kullanıcı_custemer_services_başliğinin_altinda_hygienic_car_başlıgini_görünür_oldugunu_test_eder() {
-      Assert.assertTrue(homePage.hygienicCars.isDisplayed());
+        Assert.assertTrue(homePage.hygienicCars.isDisplayed());
 
     }
     @Given("Kulllanıcı Type you email texbox'un tıklanabilir oldugunu test eder")
@@ -71,4 +71,4 @@ public class US_008_StepDefinationCustomerServicesSubscription {
 
     }
 
-    }
+}
