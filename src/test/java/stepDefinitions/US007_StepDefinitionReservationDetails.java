@@ -14,7 +14,7 @@ import utilities.Driver;
 
 import static utilities.ReusableMethods.waitFor;
 
-public class US_007_StepDefinitionReservationDetails {
+public class US007_StepDefinitionReservationDetails {
     HomePage homePage=new HomePage();
     Actions actions=new Actions(Driver.getDriver());
 
