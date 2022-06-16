@@ -30,6 +30,6 @@ scenario'lar için screenshoot olmasi amaciyla
         if (scenario.isFailed()) {
             scenario.attach(screenshot, "image/png", "screenshots");
         }
-        Driver.closeDriver();
+       // Driver.closeDriver();
     }
 }

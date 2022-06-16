@@ -199,4 +199,7 @@ public class HomePage {
 
     @FindBy(xpath ="(//button[@type='button'])[2]" )
     public WebElement suscribeButonu;
+
+
+
 }
