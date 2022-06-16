@@ -130,6 +130,7 @@ public class HomePage {
     @FindBy(xpath = "//div[@class=\"mt-2 row\"]")
     public WebElement ourPartners;
 
+
     //seçkin
     @FindBy(xpath ="//div[@class='section-title']" )
     public WebElement customerServices;
@@ -154,6 +155,10 @@ public class HomePage {
 
     @FindBy(xpath ="(//button[@type='button'])[2]" )
     public WebElement suscribeButonu;
+
+
+
+
 
 
 }
