@@ -26,5 +26,33 @@ public class US_008_StepDefinationCustomerServicesSubscription {
 
 
     }
+    @Given("Kulllanıcı Type you email texbox'un tıklanabilir oldugunu test eder")
+    public void kulllanıcı_type_you_email_texbox_un_tıklanabilir_oldugunu_test_eder() {
+
+    }
+    @Given("Kullanıcı Subscribe butonunun görünürlüğünü test eder.")
+    public void kullanıcı_subscribe_butonunun_görünürlüğünü_test_eder() {
+
+    }
+    @Given("Kullanıcı Subscribe butonunun tıklanılabilirliğini test eder.")
+    public void kullanıcı_subscribe_butonunun_tıklanılabilirliğini_test_eder() {
+
+    }
+    @Given("Kullanıcı Email texbox''un tıklanabilir oldugunu test eder.")
+    public void kullanıcı_email_texbox_un_tıklanabilir_oldugunu_test_eder() {
+
+    }
+    @Given("Kullanıcı Email texbox'a email adresini gönderir.")
+    public void kullanıcı_email_texbox_a_email_adresini_gönderir() {
+
+    }
+    @Given("Kullanıcı subscribe butonunu tıklar.")
+    public void kullanıcı_subscribe_butonunu_tıklar() {
+
+    }
+    @Given("Kullnıcı email adresine mail geldiğini test eder.")
+    public void kullnıcı_email_adresine_mail_geldiğini_test_eder() {
+
+    }
 
     }
