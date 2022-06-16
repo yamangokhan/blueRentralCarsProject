@@ -10,6 +10,7 @@ import pages.HomePage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
+
 public class US_001_StepDefinitionKayit {
 
     HomePage homePage = new HomePage();
@@ -46,7 +47,7 @@ public class US_001_StepDefinitionKayit {
         Actions actions = new Actions(Driver.getDriver());
         actions.click(homePage.pickUpDate).
                 sendKeys("15.06.2022").perform();
-        // "15.06.2022"
+
 
     }
 
@@ -56,11 +57,6 @@ public class US_001_StepDefinitionKayit {
         actions.click(homePage.pickUpTime).
                 sendKeys("10:00").perform();
 
-        /*
-           Select select=new Select(blueRentalCarsPage.pickUpTime);
-            select.selectByVisibleText("10:00");
-
-         */
     }
 
     @And("user drop off  date bolumune giris yapılabilmeli")
@@ -68,11 +64,6 @@ public class US_001_StepDefinitionKayit {
         Actions actions = new Actions(Driver.getDriver());
         actions.click(homePage.dropOffDate).
                 sendKeys("15.06.2022").perform();
-        /*
-          Select select=new Select(blueRentalCarsPage.dropOffDate);
-            select.selectByVisibleText("15.06.2022");
-
-         */
 
     }
 

@@ -14,4 +14,5 @@ Feature:US001 kullanici anasayfada login olmadan arac secmek ister
     And user drop off  date bolumune giris yapılabilmeli
     Then user drop off time bolumune giris yapılabilmeli
     Then user Contınue Reservation Butonuna tıklayabilmeli
+    And kullanici 3 saniye bekler
     Then user "Please first login" yazısını görebilirligini kontrol eder
