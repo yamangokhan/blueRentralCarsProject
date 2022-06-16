@@ -199,4 +199,19 @@ public class HomePage {
 
     @FindBy(xpath ="(//button[@type='button'])[2]" )
     public WebElement suscribeButonu;
+
+    //Emrah
+
+    @FindBy (xpath = "//*[@id=\"root\"]/div[8]/div[2]/div[1]/ul")
+    public WebElement araclar;
+
+    @FindBy (xpath = "//*[@id=\"root\"]/div[8]/div[1]/h2")
+    public WebElement vehiclesYazisi;
+
+    @FindBy (xpath = "//*[@id=\"root\"]/div[8]/div[2]/div[3]/table/tbody/tr[1]/td[2]")
+    public WebElement secilenAracModel;
+
+    @FindBy (xpath = "//*[@id=\"root\"]/div[8]/div[2]/div[2]/img")
+    public WebElement aracResim;
+
 }
