@@ -38,10 +38,7 @@ public class US_008_StepDefinationCustomerServicesSubscription {
     public void kullanıcı_subscribe_butonunun_tıklanılabilirliğini_test_eder() {
 
     }
-    @Given("Kullanıcı Email texbox''un tıklanabilir oldugunu test eder.")
-    public void kullanıcı_email_texbox_un_tıklanabilir_oldugunu_test_eder() {
 
-    }
     @Given("Kullanıcı Email texbox'a email adresini gönderir.")
     public void kullanıcı_email_texbox_a_email_adresini_gönderir() {
 
