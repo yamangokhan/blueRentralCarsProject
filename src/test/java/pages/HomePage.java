@@ -186,6 +186,30 @@ public WebElement loginButton;
     @FindBy(xpath = "//div[@class=\"mt-2 row\"]")
     public WebElement ourPartners;
 
+    //seçkin
+    @FindBy(xpath ="//div[@class='section-title']" )
+    public WebElement customerServices;
+
+    @FindBy(xpath ="//div[@class='col-lg-10']" )
+    public WebElement flexRenting;
+
+    @FindBy(xpath ="(//div[@class='col-lg-10'])[2]" )
+    public WebElement noExtraPrice;
+
+    @FindBy(xpath ="(//div[@class='col-lg-10'])[3]" )
+    public WebElement priceEqualization;
+
+    @FindBy(xpath ="(//div[@class='col-lg-10'])[4]" )
+    public WebElement hygienicCars;
+
+    @FindBy(xpath ="(//div[@class='col-lg-6'])[1]" )
+    public WebElement newsletterSubscription;
+
+    @FindBy(xpath ="//input[@type='email']" )
+    public WebElement mailBox;
+
+    @FindBy(xpath ="(//button[@type='button'])[2]" )
+    public WebElement suscribeButonu;
 
 
 
