@@ -124,6 +124,19 @@ public class HomePage {
     public WebElement aboutUsBaslik;
     @FindBy(xpath = "(//a[@class='nav-link'])[4]")
     public WebElement contactBaslik;
+    @FindBy(xpath = "//a[@class='navbar-brand']")
+    public WebElement blueRentalcarsLogo;
+    @FindBy(xpath = "//div[@class='col-7']")
+    public WebElement callUsBaslik;
+    @FindBy(xpath = "//img[@src='/assets/img/cars/volvo-s90.png']")
+    public WebElement degisenAracVolvo;
+    @FindBy(xpath = "//span[@class='carousel-control-prev-icon']")
+    public WebElement controlButtonuSol;
+    @FindBy(xpath = "//span[@class='carousel-control-next-icon']")
+    public WebElement controlButtonuSag;
+    @FindBy(xpath = "(//img[@class='d-block w-100'])[1]")
+    public WebElement degisenAracAudi;
+
     //Huseyin
     @FindBy(xpath="//h2[text()='What do we offer?']")
     public WebElement whatDoWeOffer;
