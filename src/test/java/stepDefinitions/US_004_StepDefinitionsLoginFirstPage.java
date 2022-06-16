@@ -51,4 +51,30 @@ public class US_004_StepDefinitionsLoginFirstPage {
         Assert.assertTrue(homPage.aboutUsBaslik.isEnabled());
         Assert.assertTrue(homPage.homeBaslik.isEnabled());
     }
+
+    @And("Bluerentalcars logosunun gorunur oldugunu test eder")
+    public void bluerentalcarsLogosununGorunurOldugunuTestEder() {
+            Assert.assertTrue(homPage.blueRentalcarsLogo.isDisplayed());
+    }
+
+    @Given("Call Us textin gorunur oldugubu test eder")
+    public void call_us_textin_gorunur_oldugubu_test_eder() {
+            Assert.assertTrue(homPage.callUsBaslik.isDisplayed());
+    }
+
+    @And("Degisen araclar gorselinin calisip calismadigini test eder")
+    public void degisenAraclarGorselininCalisipCalismadiginiTestEder() {
+
+        Assert.assertTrue(homPage.degisenAracAudi.isDisplayed());
+        homPage.controlButtonuSol.click();
+        Assert.assertTrue(homPage.degisenAracVolvo.isDisplayed());
+        Assert.assertTrue(homPage.controlButtonuSag.isEnabled());
+
+    }
+
+
+
+
+
+
 }
