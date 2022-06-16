@@ -1,2 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" time="0.122"/>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.388">
+    <testcase classname="US012 kullanici profil sayfasini kontrol edebilir" name="TC01 kullanici dropdown menusunu kullanabilir" time="0.099">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
+            <![CDATA[Given kullanici "BlueRentaCarURL" sitesine gider............................passed
+And kullanici verilen email ve passwordla giris yapar.......................passed
+Then kullanici isminin yazdigi dropdown menusundeki Reservations butonuna basar.undefined
+And kullanici https://www.bluerentalcars.com/reservations url'ine ait sayfanin acildigini test eder.skipped
+Then kullanici isminin yazdigi dropdown menusundeki Profile butonuna basar..skipped
+And kullanici https://www.bluerentalcars.com/profile url'ine ait sayfanin acildigini test eder.skipped
+Then kullanici isminin yazdigi dropdown menusundeki Logout butonuna basar...skipped
+And kullanici "Are you sure want to logout?" sorusunun gorunur oldugunu test eder.skipped
+]]>
+        </failure>
+    </testcase>
+</testsuite>

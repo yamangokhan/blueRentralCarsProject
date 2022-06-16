@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features",
         glue = "stepDefinitions",
-        tags = "@loginFirstPage",
+        tags = "@US_012",
         dryRun = false
 )
 
