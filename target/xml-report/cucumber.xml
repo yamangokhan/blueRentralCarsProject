@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="7.529">
-    <testcase classname="Kullanici verilen bilgilerle anasayfaya giris yapabilmeli" name="TC01 kullanici anasayfaya giris yapabilir ve sayfayi kullanir" time="7.373">
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="13.17">
+    <testcase classname="Kullanıcı anasayfadaki özellikleri kullanabilir" name="TC02 Newsletter Type your email textbox'a email bilgilerini girerek subscribe işlemini gerçekleştirir." time="12.78">
         <failure message="" type="java.lang.AssertionError">
-            <![CDATA[Given kullanici "BlueRentaCarURL" sitesine gider............................passed
-And kullanici verilen email ve passwordla giris yapar.......................passed
-And ismi yazili dropdown menusunu test eder.................................passed
-And sosyal medya ikonlarinin görunurlugunu test eder........................passed
-And home,services,About Us ve Contact  calisitigini test eder...............passed
-And Bluerentalcars logosunun gorunur oldugunu test eder.....................passed
-And Call Us "+1 654 7889 45" textin gorunur oldugubu test eder..............passed
-And Degisen araclar gorselinin calisip calismadigini test eder..............failed
+            <![CDATA[Given kullanici "BlueRentaCarURL" sitesine giderr...........................passed
+And Kulllanıcı Type you email texbox'un tıklanabilir oldugunu test eder.....passed
+And Kullanıcı Subscribe butonunun görünürlüğünü test eder...................passed
+And Kullanıcı Subscribe butonunun tıklanılabilirliğini test eder............passed
+And Kullanıcı Email texbox'a email adresini gönderir........................passed
+And Kullanıcı subscribe butonunu tıklar.....................................passed
+And Kullnıcı email adresine mail geldiğini test eder........................failed
 
 StackTrace:
 java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:87)
 	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertTrue(Assert.java:53)
-	at stepDefinitions.US_004_StepDefinitionsLoginFirstPage.degisenAraclarGorselininCalisipCalismadiginiTestEder(US_004_StepDefinitionsLoginFirstPage.java:67)
-	at ✽.Degisen araclar gorselinin calisip calismadigini test eder(file:///C:/Users/ASUS/IdeaProjects/blueRentralCarsProject/src/test/resources/features/US004_LoginFirstPage.feature:30)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at org.junit.Assert.assertFalse(Assert.java:75)
+	at stepDefinitions.US_008_StepDefinationCustomerServicesSubscription.kullnıcı_email_adresine_mail_geldiğini_test_eder(US_008_StepDefinationCustomerServicesSubscription.java:69)
+	at ✽.Kullnıcı email adresine mail geldiğini test eder.(file:///C:/Users/Lenovo/IdeaProjects/blueRentralCarsProject/src/test/resources/features/US008_CuıstomerServicesSubscription.feature:19)
 ]]>
         </failure>
     </testcase>
