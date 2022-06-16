@@ -14,7 +14,6 @@ Feature: Kullanıcı anasayfadaki özellikleri kullanabilir
       And Kulllanıcı Type you email texbox'un tıklanabilir oldugunu test eder
       And Kullanıcı Subscribe butonunun görünürlüğünü test eder.
       And Kullanıcı Subscribe butonunun tıklanılabilirliğini test eder.
-      And Kullanıcı Email texbox''un tıklanabilir oldugunu test eder.
       And Kullanıcı Email texbox'a email adresini gönderir.
       And Kullanıcı subscribe butonunu tıklar.
       And Kullnıcı email adresine mail geldiğini test eder.
