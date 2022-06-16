@@ -1,2 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" time="0.122"/>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="7.529">
+    <testcase classname="Kullanici verilen bilgilerle anasayfaya giris yapabilmeli" name="TC01 kullanici anasayfaya giris yapabilir ve sayfayi kullanir" time="7.373">
+        <failure message="" type="java.lang.AssertionError">
+            <![CDATA[Given kullanici "BlueRentaCarURL" sitesine gider............................passed
+And kullanici verilen email ve passwordla giris yapar.......................passed
+And ismi yazili dropdown menusunu test eder.................................passed
+And sosyal medya ikonlarinin görunurlugunu test eder........................passed
+And home,services,About Us ve Contact  calisitigini test eder...............passed
+And Bluerentalcars logosunun gorunur oldugunu test eder.....................passed
+And Call Us "+1 654 7889 45" textin gorunur oldugubu test eder..............passed
+And Degisen araclar gorselinin calisip calismadigini test eder..............failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepDefinitions.US_004_StepDefinitionsLoginFirstPage.degisenAraclarGorselininCalisipCalismadiginiTestEder(US_004_StepDefinitionsLoginFirstPage.java:67)
+	at ✽.Degisen araclar gorselinin calisip calismadigini test eder(file:///C:/Users/ASUS/IdeaProjects/blueRentralCarsProject/src/test/resources/features/US004_LoginFirstPage.feature:30)
+]]>
+        </failure>
+    </testcase>
+</testsuite>
