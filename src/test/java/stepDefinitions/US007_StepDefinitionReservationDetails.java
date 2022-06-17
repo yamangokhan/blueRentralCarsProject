@@ -119,8 +119,8 @@ public class US007_StepDefinitionReservationDetails {
         Assert.assertTrue(homePage.completeReservation.isEnabled());
         waitFor(3);
         homePage.completeReservationButton.click();
-        //waitFor(3);
-        //Assert.assertTrue(homePage.successReserv.isDisplayed());
+        waitFor(3);
+        Assert.assertTrue(homePage.successReserv.isDisplayed());
     }
 
     @And("kullanici basarili reservasyon islemi sonrasi ismi altinda bulunan dropdown menu Reservations butonu ile yapilan reservasyoni gorebilir")
