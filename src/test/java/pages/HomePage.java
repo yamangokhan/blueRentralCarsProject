@@ -41,8 +41,8 @@ public class HomePage {
     @FindBy(xpath ="//button[@class='accordion-button']") public WebElement reservationDetailsAcik  ;
     @FindBy(xpath ="//button[@class='accordion-button collapsed']") public WebElement reservationDetailsKapali  ;
     @FindBy(xpath ="//button[text()='Car Details']") public WebElement carDetailsButonu ;
-    @FindBy(xpath ="//button[text()='Car Details']") public WebElement carDetailsAcik ;
-    @FindBy(xpath ="//button[text()='Car Details']") public WebElement carDetailsKapali ;
+    @FindBy(xpath ="//button[@class='accordion-button']") public WebElement carDetailsAcik ;
+    @FindBy(xpath ="//button[@class='accordion-button collapsed']") public WebElement carDetailsKapali ;
     @FindBy(xpath ="(//img[@class='img-fluid'])[2]") public WebElement aracResmi;
     @FindBy(xpath ="//*[@id=\"root\"]/nav/div/a/img") public WebElement logomuz;
     @FindBy(xpath ="//button[@class='w-100 btn btn-primary btn-lg']") public WebElement continueReservButonu;
