@@ -13,10 +13,10 @@ public class HomePage {
     @FindBy(xpath = "//b[contains(text(),'Address')]") public WebElement address;
     @FindBy(xpath = " //b[contains(text(),'Phone')]") public WebElement phone;
     @FindBy(xpath = "//div[text()='Total price: $']") public WebElement totalPrice;
-    @FindBy(xpath = "//label[text()='Card number']") public WebElement cardNumber;
-    @FindBy(xpath = "//label[text()='Name on Card']") public WebElement nameOnCard;
-    @FindBy(xpath = "//label[text()='Expire Date']") public WebElement expireDate;
-    @FindBy(xpath = "//label[text()='CVC']") public WebElement cvc;
+    @FindBy(xpath = "//input[@name='cardNo']") public WebElement cardNumber;
+    @FindBy(xpath = "//input[@name='nameOnCard']") public WebElement nameOnCard;
+    @FindBy(xpath = "//input[@name='expireDate']") public WebElement expireDate;
+    @FindBy(xpath = "//input[@name='cvc']") public WebElement cvc;
     @FindBy(xpath = "//label[text()='I have read and aggree the sales contract']") public WebElement iHaveReadandAgree;
     @FindBy(xpath = "//button[text()='Close']") public WebElement close;
     @FindBy(xpath = "//button[text()=' Complete Reservation']") public WebElement completeReservationButton;
@@ -47,7 +47,7 @@ public class HomePage {
     @FindBy(xpath ="//*[@id=\"root\"]/nav/div/a/img") public WebElement logomuz;
     @FindBy(xpath ="//button[@class='w-100 btn btn-primary btn-lg']") public WebElement continueReservButonu;
     @FindBy(xpath ="//input[@class='form-check-input is-invalid']") public WebElement iHaveReadCheckBox;
-    @FindBy(xpath = "//div[text()='Reservation created successfully'") public WebElement successReserv;
+    @FindBy(xpath = "//div[text()='Reservation created successfully']") public WebElement successReserv;
     @FindBy(xpath = "//button[@id='dropdown-basic-button']") public WebElement isimliButon;
     @FindBy(xpath = "//div[text()='Reservation created successfully'") public WebElement tumbody;
     @FindBy(xpath = "(//tbody)[1]") public WebElement resTablebody;
