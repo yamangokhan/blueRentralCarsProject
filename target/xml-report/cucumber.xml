@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="82.483">
-    <testcase classname="US005 Kullanıcı başarız arac reservasyon işlemini test edebilmeli" name="TC01 Kullanıcı başarız arac reservasyon işlemini test edebilmeli" time="80.253">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="36.12">
+    <testcase classname="US005 Kullanıcı başarız arac reservasyon işlemini test edebilmeli" name="TC01 Kullanıcı başarız arac reservasyon işlemini test edebilmeli" time="34.891">
         <system-out>
             <![CDATA[Given kullanici "BlueRentaCarURL" sitesine gider............................passed
 And kullanici dropdown butonundan araç seçer................................passed
