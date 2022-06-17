@@ -70,8 +70,9 @@ public class US_005_StepDefinitionReservationWithoutLogin {
         homePage.continueReservation.click();
     }
     @Then("Kullanıcı başarız işlem sonrası {string} uyarı mesajını görür")
-    public void kullanıcı_başarız_işlem_sonrası_uyarı_mesajını_görür(String string) {
+    public void kullanıcı_başarız_işlem_sonrası_uyarı_mesajını_görür(String string) throws InterruptedException {
 
-        Assert.assertTrue(homePage.pleaseFirstLogin.isDisplayed());
+               Thread.sleep(3000);
+               Assert.assertTrue(homePage.pleaseFirstLogin.isDisplayed());
 
     }}

@@ -72,6 +72,7 @@ public class HomePage {
     public WebElement continueReservation;
     @FindBy(xpath = "//*[text()='Please first login']")
     public WebElement pleaseFirstLogin;
+
     //US_011 by yavuz-cemil
     @FindBy(xpath = "//a[@class='nav-link'][normalize-space()='Contact']")
     public WebElement contact;
