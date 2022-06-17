@@ -8,42 +8,51 @@ public class HomePage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
     //US_008 Sule Jasmina  //
-    @FindBy(xpath = "//*[text()='Complete Reservation']")
-    public WebElement completeReservation;
-    @FindBy(xpath = "//b[contains(text(),'Name')]")
-    public WebElement name;
-    @FindBy(xpath = "//b[contains(text(),'Address')]")
-    public WebElement address;
-    @FindBy(xpath = " //b[contains(text(),'Phone')]")
-    public WebElement phone;
-    @FindBy(xpath = "//div[text()='Total price: $']")
-    public WebElement totalPrice;
-    @FindBy(xpath = "//label[text()='Card number']")
-    public WebElement cardNumber;
-    @FindBy(xpath = "//label[text()='Name on Card']")
-    public WebElement nameOnCard;
-    @FindBy(xpath = "//label[text()='Expire Date']")
-    public WebElement expireDate;
-    @FindBy(xpath = "//label[text()='CVC']")
-    public WebElement cvc;
-    @FindBy(xpath = "//label[text()='I have read and aggree the sales contract']")
-    public WebElement iHaveReadandAgree;
-    @FindBy(xpath = "//button[text()='Close']")
-    public WebElement close;
-    @FindBy(xpath = "//button[text()=' Complete Reservation']")
-    public WebElement completeReservationButton;
-    @FindBy(xpath = "//span[text()='CALL US']")
-    public WebElement callUS;
-    @FindBy(xpath = "//a[text()='Reservations']")
-    public WebElement reservations;
-    @FindBy(xpath = "//tbody/tr[2]/td[2]")//click yapilip diger sayfaya gec
-    public WebElement webTableElement;
-    @FindBy(xpath = "//button[text()='Reservation Details']")
-    public WebElement reservationDetails;
-    @FindBy(xpath = "//button[text()='Car Details']")
-    public WebElement carDetails;
-    @FindBy(xpath = "//button[text()=' Back to reservations']")
-    public WebElement backToReservation;
+    @FindBy(xpath = "//*[text()='Complete Reservation']") public WebElement completeReservation;
+    @FindBy(xpath = "//b[contains(text(),'Name')]") public WebElement name;
+    @FindBy(xpath = "//b[contains(text(),'Address')]") public WebElement address;
+    @FindBy(xpath = " //b[contains(text(),'Phone')]") public WebElement phone;
+    @FindBy(xpath = "//div[text()='Total price: $']") public WebElement totalPrice;
+    @FindBy(xpath = "//label[text()='Card number']") public WebElement cardNumber;
+    @FindBy(xpath = "//label[text()='Name on Card']") public WebElement nameOnCard;
+    @FindBy(xpath = "//label[text()='Expire Date']") public WebElement expireDate;
+    @FindBy(xpath = "//label[text()='CVC']") public WebElement cvc;
+    @FindBy(xpath = "//label[text()='I have read and aggree the sales contract']") public WebElement iHaveReadandAgree;
+    @FindBy(xpath = "//button[text()='Close']") public WebElement close;
+    @FindBy(xpath = "//button[text()=' Complete Reservation']") public WebElement completeReservationButton;
+    @FindBy(xpath = "//a[text()='Reservations']") public WebElement reservations;
+    @FindBy(xpath = "//button[text()=' Back to reservations']") public WebElement backToReservation;
+    @FindBy(xpath = "(//button[@class='w-100 btn btn-primary btn-lg'])") public WebElement conReservButonu;
+    @FindBy(xpath = "//a[@class='btn btn-primary btn-sm']" ) public WebElement Login;
+    @FindBy(xpath = "//input[@id='formBasicPassword']") public WebElement passwordBox;
+    @FindBy(xpath = "//select[@name='car']") public WebElement selectACar;
+    @FindBy(xpath = "//input[@name='pickUpLocation']") public WebElement pickUpPlace;
+    @FindBy(xpath = "//input[@name='dropOfLocation']") public WebElement dropOfPlace;
+    @FindBy(xpath = "//input[@name='pickUpDate']") public WebElement pickUpggayyyy;
+    @FindBy(xpath = "//input[@name='pickUpTime']") public WebElement pickUpsaat;
+    @FindBy(xpath = "//input[@name='dropOffDate']") public WebElement dropOfggaayyyy;
+    @FindBy(xpath = "//input[@name='dropOffTime']") public WebElement dropOfsaat;
+    @FindBy(xpath = "//button[text()=' Login']") public WebElement loginButtonu;
+    @FindBy(xpath ="//b[text()='Pick-Up Time']") public WebElement pickUpTimeButonu;
+    @FindBy(xpath ="//b[text()='Drop-Off Time']") public WebElement dropOffTimeButonu ;
+    @FindBy(xpath ="//b[text()='Pick-Up Location']") public WebElement pickUpLocation ;
+    @FindBy(xpath ="//b[text()='Drop-Off Location']") public WebElement dropOffLocation ;
+    @FindBy(xpath ="//button[text()='Reservation Details']") public WebElement reservationDetailsButon  ;
+    @FindBy(xpath ="//button[@class='accordion-button']") public WebElement reservationDetailsAcik  ;
+    @FindBy(xpath ="//button[@class='accordion-button collapsed']") public WebElement reservationDetailsKapali  ;
+    @FindBy(xpath ="//button[text()='Car Details']") public WebElement carDetailsButonu ;
+    @FindBy(xpath ="//button[text()='Car Details']") public WebElement carDetailsAcik ;
+    @FindBy(xpath ="//button[text()='Car Details']") public WebElement carDetailsKapali ;
+    @FindBy(xpath ="(//img[@class='img-fluid'])[2]") public WebElement aracResmi;
+    @FindBy(xpath ="//*[@id=\"root\"]/nav/div/a/img") public WebElement logomuz;
+    @FindBy(xpath ="//button[@class='w-100 btn btn-primary btn-lg']") public WebElement continueReservButonu;
+    @FindBy(xpath ="//input[@class='form-check-input is-invalid']") public WebElement iHaveReadCheckBox;
+    @FindBy(xpath = "//div[text()='Reservation created successfully'") public WebElement successReserv;
+    @FindBy(xpath = "//button[@id='dropdown-basic-button']") public WebElement isimliButon;
+    @FindBy(xpath = "//div[text()='Reservation created successfully'") public WebElement tumbody;
+    @FindBy(xpath = "(//tbody)[1]") public WebElement resTablebody;
+    @FindBy(xpath = "(//tbody)[2]") public WebElement carTablebody;
+    @FindBy(xpath = "//td[text()='Maseratittt']") public WebElement istenenRezervasyon;
     //US_005 by Sevilay --
     @FindBy(xpath = "//select[@name='car']")
     public WebElement dropDown;
@@ -125,6 +134,19 @@ public class HomePage {
     public WebElement aboutUsBaslik;
     @FindBy(xpath = "(//a[@class='nav-link'])[4]")
     public WebElement contactBaslik;
+    @FindBy(xpath = "//a[@class='navbar-brand']")
+    public WebElement blueRentalcarsLogo;
+    @FindBy(xpath = "//div[@class='col-7']")
+    public WebElement callUsBaslik;
+    @FindBy(xpath = "//img[@src='/assets/img/cars/volvo-s90.png']")
+    public WebElement degisenAracVolvo;
+    @FindBy(xpath = "//span[@class='carousel-control-prev-icon']")
+    public WebElement controlButtonuSol;
+    @FindBy(xpath = "//span[@class='carousel-control-next-icon']")
+    public WebElement controlButtonuSag;
+    @FindBy(xpath = "(//img[@class='d-block w-100'])[1]")
+    public WebElement degisenAracAudi;
+
     //Huseyin
     @FindBy(xpath="//h2[text()='What do we offer?']")
     public WebElement whatDoWeOffer;
@@ -200,4 +222,19 @@ public class HomePage {
 
     @FindBy(xpath ="(//button[@type='button'])[2]" )
     public WebElement suscribeButonu;
+
+    //Emrah
+
+    @FindBy (xpath = "//*[@id=\"root\"]/div[8]/div[2]/div[1]/ul")
+    public WebElement araclar;
+
+    @FindBy (xpath = "//*[@id=\"root\"]/div[8]/div[1]/h2")
+    public WebElement vehiclesYazisi;
+
+    @FindBy (xpath = "//*[@id=\"root\"]/div[8]/div[2]/div[3]/table/tbody/tr[1]/td[2]")
+    public WebElement secilenAracModel;
+
+    @FindBy (xpath = "//*[@id=\"root\"]/div[8]/div[2]/div[2]/img")
+    public WebElement aracResim;
+
 }

@@ -10,7 +10,6 @@ import utilities.Driver;
     public class US_006_StepDefinitionBlueRentalCars {
         HomePage homePage = new HomePage();
 
-
         @Given("kullanici {string} sitesine gider")
         public void kullanici_sitesine_gider(String string) {
             Driver.getDriver().get(ConfigReader.getProperty("BlueRentaCarURL"));
@@ -57,5 +56,82 @@ import utilities.Driver;
             actions.click(homePage.DropOff).
                     sendKeys("Alaska").perform();
         }
+
+        @Given("Kullanıcı anasayfada bulunan pickUpDate satirinin gorunur oldugunu test eder")
+        public void kullanıcıAnasayfadaBulunanPickUpDateSatirininGorunurOldugunuTestEder() {
+            Assert.assertTrue(homePage.pickUpDate.isDisplayed());
+        }
+
+        @Given("kullanici pickUpDate satirina tarih girer")
+        public void kullaniciPickUpDateSatirinaTarihGirer() {
+            Actions actions = new Actions(Driver.getDriver());
+            actions.click(homePage.pickUpDate).
+                    sendKeys("10")
+                    .sendKeys("12")
+                    .sendKeys("2022")
+                    .perform();
+
+        }
+
+        @Given("Kullanıcı anasayfada bulunan PickUpTime satirinin gorunur oldugunu test eder")
+        public void kullanıcıAnasayfadaBulunanPickUpTimeSatirininGorunurOldugunuTestEder() {
+            Assert.assertTrue(homePage.pickUpTime.isDisplayed());
+        }
+
+        @Given("kullanici PickUpTime satirina kayitli saat secer")
+        public void kullaniciPickUpTimeSatirinaKayitliSaatSecer() {
+            Actions actions = new Actions(Driver.getDriver());
+            actions.click(homePage.pickUpTime).
+                    sendKeys("23")
+                    .sendKeys("23")
+                    .perform();
+
+        }
+
+        @Given("Kullanıcı anasayfada bulunan DropOffDate satirinin gorunur oldugunu test eder")
+        public void kullanıcıAnasayfadaBulunanDropOffDateSatirininGorunurOldugunuTestEder() {
+            Assert.assertTrue(homePage.dropOffDate.isDisplayed());
+        }
+
+        @Given("kullanici DropOffTime satirina tarih secer")
+        public void kullaniciDropOffTimeSatirinaTarihSecer() {
+            Actions actions = new Actions(Driver.getDriver());
+            actions.click(homePage.dropOffDate).
+                    sendKeys("10")
+                    .sendKeys("12")
+                    .sendKeys("2023")
+                    .perform();
+        }
+
+        @Given("Kullanıcı anasayfada bulunan DropOffTime satirinin gorunur oldugunu test eder")
+        public void kullanıcıAnasayfadaBulunanDropOffTimeSatirininGorunurOldugunuTestEder() {
+            Assert.assertTrue(homePage.pickUpTime.isDisplayed());
+        }
+
+        @Given("kullanici DropOffTime satirina  saat secer")
+        public void kullaniciDropOffTimeSatirinaSaatSecer() {
+            Actions actions = new Actions(Driver.getDriver());
+            actions.click(homePage.dropOffTime).
+                    sendKeys("23")
+                    .sendKeys("23")
+                    .perform();
+        }
+
+        @Given("Kullanıcı anasayfada bulunan Continue Reservation satirinin gorunur oldugunu test eder")
+        public void kullanıcıAnasayfadaBulunanContinueReservationSatirininGorunurOldugunuTestEder() {
+            Assert.assertTrue(homePage.continueReservation.isDisplayed());
+        }
+
+        @Given("kullanici Continue Reservation butonuna tiklar")
+        public void kullaniciContinueReservationButonunaTiklar() {
+            homePage.continueReservation.click();
+        }
+
+        @Given("pleaseFirstLogin gorunur oldugunu test eder")
+        public void pleasefirstloginGorunurOldugunuTestEder() {
+            Assert.assertTrue(homePage.pleaseFirstLogin.isEnabled());
+        }
     }
+
+
 

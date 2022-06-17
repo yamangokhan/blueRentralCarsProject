@@ -1,5 +1,4 @@
 package utilities;
-
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -7,15 +6,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.*;
-
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.*;
-
 import static utilities.Driver.driver;
-
 public class BrowserUtilities {
     public static void writeDataToIdsFile(String tip, String id) { // room=123123
         try (FileOutputStream output = new FileOutputStream("ids.properties")) {
@@ -206,3 +202,4 @@ public class BrowserUtilities {
         }
     }
 }
+
