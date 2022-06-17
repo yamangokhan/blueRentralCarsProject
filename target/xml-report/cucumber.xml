@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.388">
-    <testcase classname="US012 kullanici profil sayfasini kontrol edebilir" name="TC01 kullanici dropdown menusunu kullanabilir" time="0.099">
-        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="36.12">
+    <testcase classname="US005 Kullanıcı başarız arac reservasyon işlemini test edebilmeli" name="TC01 Kullanıcı başarız arac reservasyon işlemini test edebilmeli" time="34.891">
+        <system-out>
             <![CDATA[Given kullanici "BlueRentaCarURL" sitesine gider............................passed
-And kullanici verilen email ve passwordla giris yapar.......................passed
-Then kullanici isminin yazdigi dropdown menusundeki Reservations butonuna basar.undefined
-And kullanici https://www.bluerentalcars.com/reservations url'ine ait sayfanin acildigini test eder.skipped
-Then kullanici isminin yazdigi dropdown menusundeki Profile butonuna basar..skipped
-And kullanici https://www.bluerentalcars.com/profile url'ine ait sayfanin acildigini test eder.skipped
-Then kullanici isminin yazdigi dropdown menusundeki Logout butonuna basar...skipped
-And kullanici "Are you sure want to logout?" sorusunun gorunur oldugunu test eder.skipped
+And kullanici dropdown butonundan araç seçer................................passed
+And kullanici Pick up satırından kayıtlı yer seçer..........................passed
+Then kullanici Drop Off satırından kayıtlı yer seçer........................passed
+Then kullanici Pick up tarih bölümüne takvimden tarih seçer.................passed
+Then kullanici Pick up saat bölümüne takvimden saat seçer...................passed
+Then kullanici Drop Off tarih bölümüne takvimden tarih seçer................passed
+And kullanici Drop Off saat bölümüne takvimden saat seçer...................passed
+And kullanici Contınue Reservation Butonuna tıklar..........................passed
+Then Kullanıcı başarız işlem sonrası " Please first Login" uyarı mesajını görür.passed
 ]]>
-        </failure>
+        </system-out>
     </testcase>
 </testsuite>
