@@ -119,8 +119,8 @@ public class US007_StepDefinitionReservationDetails {
         Assert.assertTrue(homePage.completeReservation.isEnabled());
         waitFor(3);
         homePage.completeReservationButton.click();
-        //waitFor(3);
-        //Assert.assertTrue(homePage.successReserv.isDisplayed());
+        waitFor(3);
+        Assert.assertTrue(homePage.successReserv.isDisplayed());
     }
 
     @And("kullanici basarili reservasyon islemi sonrasi ismi altinda bulunan dropdown menu Reservations butonu ile yapilan reservasyoni gorebilir")
@@ -130,9 +130,8 @@ public class US007_StepDefinitionReservationDetails {
         homePage.reservations.click();
         waitFor(5);
         //WEBTABLE
-        System.out.println(homePage.tumbody.getText());
         String webTableData=homePage.tumbody.getText();
-        Assert.assertTrue(webTableData.contains(ConfigReader.getProperty("secilenAraba")));
+        Assert.assertTrue(webTableData.contains(ConfigReader.getProperty("selectedCar")));
         waitFor(2);
     }
 
@@ -144,13 +143,13 @@ public class US007_StepDefinitionReservationDetails {
         homePage.reservationDetailsAcik.click();
         waitFor(2);
         Assert.assertTrue(homePage.reservationDetailsKapali.isDisplayed());
-        homePage.carDetailsKapali.click();
+        homePage.reservationDetailsKapali.click();
         waitFor(2);
     }
 
     @And("kullanici reservasyon islemine ait bilgileri Reservation Details basligi altinda dogrular")
     public void kullaniciReservasyonIslemineAitBilgileriReservationDetailsBasligiAltindaDogrular() {
-        Assert.assertTrue(homePage.resTablebody.getText().contains(ConfigReader.getProperty("selectedLocaation")));
+        Assert.assertTrue(homePage.resTablebody.getText().contains(ConfigReader.getProperty("selectedLocation")));
     }
 
     @And("kullanici Car Details acilir kapanir butonunun gorulebilir ve tiklanabilir oldugunu test eder")
@@ -174,6 +173,6 @@ public class US007_StepDefinitionReservationDetails {
     public void KullaniciBackToReservationsButonununTiklanabilirOldugunuTestEder() {
         Assert.assertTrue(homePage.backToReservation.isDisplayed());
         homePage.backToReservation.click();
-        waitFor(3);
+        waitFor(5);
     }
 }

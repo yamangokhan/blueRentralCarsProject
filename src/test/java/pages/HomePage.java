@@ -49,7 +49,7 @@ public class HomePage {
     @FindBy(xpath ="//input[@class='form-check-input is-invalid']") public WebElement iHaveReadCheckBox;
     @FindBy(xpath = "//div[text()='Reservation created successfully']") public WebElement successReserv;
     @FindBy(xpath = "//button[@id='dropdown-basic-button']") public WebElement isimliButon;
-    @FindBy(xpath = "//div[text()='Reservation created successfully'") public WebElement tumbody;
+    @FindBy(xpath = "//tbody") public WebElement tumbody;
     @FindBy(xpath = "(//tbody)[1]") public WebElement resTablebody;
     @FindBy(xpath = "(//tbody)[2]") public WebElement carTablebody;
     @FindBy(xpath = "//td[text()='Maseratittt']") public WebElement istenenRezervasyon;
