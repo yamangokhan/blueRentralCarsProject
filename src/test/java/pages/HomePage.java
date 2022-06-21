@@ -8,52 +8,42 @@ public class HomePage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
     //US_008 Sule Jasmina  //
-    @FindBy(xpath = "//*[text()='Complete Reservation']") public WebElement deneme;
-    @FindBy(xpath = "//*[text()='Complete Reservation']") public WebElement completeReservation;
-    @FindBy(xpath = "//b[contains(text(),'Name')]") public WebElement name;
-    @FindBy(xpath = "//b[contains(text(),'Address')]") public WebElement address;
-    @FindBy(xpath = " //b[contains(text(),'Phone')]") public WebElement phone;
-    @FindBy(xpath = "//div[text()='Total price: $']") public WebElement totalPrice;
-    @FindBy(xpath = "//label[text()='Card number']") public WebElement cardNumber;
-    @FindBy(xpath = "//label[text()='Name on Card']") public WebElement nameOnCard;
-    @FindBy(xpath = "//label[text()='Expire Date']") public WebElement expireDate;
-    @FindBy(xpath = "//label[text()='CVC']") public WebElement cvc;
-    @FindBy(xpath = "//label[text()='I have read and aggree the sales contract']") public WebElement iHaveReadandAgree;
-    @FindBy(xpath = "//button[text()='Close']") public WebElement close;
-    @FindBy(xpath = "//button[text()=' Complete Reservation']") public WebElement completeReservationButton;
-    @FindBy(xpath = "//a[text()='Reservations']") public WebElement reservations;
-    @FindBy(xpath = "//button[text()=' Back to reservations']") public WebElement backToReservation;
-    @FindBy(xpath = "(//button[@class='w-100 btn btn-primary btn-lg'])") public WebElement conReservButonu;
-    @FindBy(xpath = "//a[@class='btn btn-primary btn-sm']" ) public WebElement Login;
-    @FindBy(xpath = "//input[@id='formBasicPassword']") public WebElement passwordBox;
-    @FindBy(xpath = "//select[@name='car']") public WebElement selectACar;
-    @FindBy(xpath = "//input[@name='pickUpLocation']") public WebElement pickUpPlace;
-    @FindBy(xpath = "//input[@name='dropOfLocation']") public WebElement dropOfPlace;
-    @FindBy(xpath = "//input[@name='pickUpDate']") public WebElement pickUpggayyyy;
-    @FindBy(xpath = "//input[@name='pickUpTime']") public WebElement pickUpsaat;
-    @FindBy(xpath = "//input[@name='dropOffDate']") public WebElement dropOfggaayyyy;
-    @FindBy(xpath = "//input[@name='dropOffTime']") public WebElement dropOfsaat;
-    @FindBy(xpath = "//button[text()=' Login']") public WebElement loginButtonu;
-    @FindBy(xpath ="//b[text()='Pick-Up Time']") public WebElement pickUpTimeButonu;
-    @FindBy(xpath ="//b[text()='Drop-Off Time']") public WebElement dropOffTimeButonu ;
-    @FindBy(xpath ="//b[text()='Pick-Up Location']") public WebElement pickUpLocation ;
-    @FindBy(xpath ="//b[text()='Drop-Off Location']") public WebElement dropOffLocation ;
-    @FindBy(xpath ="//button[text()='Reservation Details']") public WebElement reservationDetailsButon  ;
-    @FindBy(xpath ="//button[@class='accordion-button']") public WebElement reservationDetailsAcik  ;
-    @FindBy(xpath ="//button[@class='accordion-button collapsed']") public WebElement reservationDetailsKapali  ;
-    @FindBy(xpath ="//button[text()='Car Details']") public WebElement carDetailsButonu ;
-    @FindBy(xpath ="//button[text()='Car Details']") public WebElement carDetailsAcik ;
-    @FindBy(xpath ="//button[text()='Car Details']") public WebElement carDetailsKapali ;
-    @FindBy(xpath ="(//img[@class='img-fluid'])[2]") public WebElement aracResmi;
-    @FindBy(xpath ="//*[@id=\"root\"]/nav/div/a/img") public WebElement logomuz;
-    @FindBy(xpath ="//button[@class='w-100 btn btn-primary btn-lg']") public WebElement continueReservButonu;
-    @FindBy(xpath ="//input[@class='form-check-input is-invalid']") public WebElement iHaveReadCheckBox;
-    @FindBy(xpath = "//div[text()='Reservation created successfully'") public WebElement successReserv;
-    @FindBy(xpath = "//button[@id='dropdown-basic-button']") public WebElement isimliButon;
-    @FindBy(xpath = "//div[text()='Reservation created successfully'") public WebElement tumbody;
-    @FindBy(xpath = "(//tbody)[1]") public WebElement resTablebody;
-    @FindBy(xpath = "(//tbody)[2]") public WebElement carTablebody;
-    @FindBy(xpath = "//td[text()='Maseratittt']") public WebElement istenenRezervasyon;
+    @FindBy(xpath = "//*[text()='Complete Reservation']")
+    public WebElement completeReservation;
+    @FindBy(xpath = "//b[contains(text(),'Name')]")
+    public WebElement name;
+    @FindBy(xpath = "//b[contains(text(),'Address')]")
+    public WebElement address;
+    @FindBy(xpath = " //b[contains(text(),'Phone')]")
+    public WebElement phone;
+    @FindBy(xpath = "//div[text()='Total price: $']")
+    public WebElement totalPrice;
+    @FindBy(xpath = "//label[text()='Card number']")
+    public WebElement cardNumber;
+    @FindBy(xpath = "//label[text()='Name on Card']")
+    public WebElement nameOnCard;
+    @FindBy(xpath = "//label[text()='Expire Date']")
+    public WebElement expireDate;
+    @FindBy(xpath = "//label[text()='CVC']")
+    public WebElement cvc;
+    @FindBy(xpath = "//label[text()='I have read and aggree the sales contract']")
+    public WebElement iHaveReadandAgree;
+    @FindBy(xpath = "//button[text()='Close']")
+    public WebElement close;
+    @FindBy(xpath = "//button[text()=' Complete Reservation']")
+    public WebElement completeReservationButton;
+    @FindBy(xpath = "//span[text()='CALL US']")
+    public WebElement callUS;
+    @FindBy(xpath = "//a[text()='Reservations']")
+    public WebElement reservations;
+    @FindBy(xpath = "//tbody/tr[2]/td[2]")//click yapilip diger sayfaya gec
+    public WebElement webTableElement;
+    @FindBy(xpath = "//button[text()='Reservation Details']")
+    public WebElement reservationDetails;
+    @FindBy(xpath = "//button[text()='Car Details']")
+    public WebElement carDetails;
+    @FindBy(xpath = "//button[text()=' Back to reservations']")
+    public WebElement backToReservation;
     //US_005 by Sevilay --
     @FindBy(xpath = "//select[@name='car']")
     public WebElement dropDown;
@@ -73,7 +63,6 @@ public class HomePage {
     public WebElement continueReservation;
     @FindBy(xpath = "//*[text()='Please first login']")
     public WebElement pleaseFirstLogin;
-
     //US_011 by yavuz-cemil
     @FindBy(xpath = "//a[@class='nav-link'][normalize-space()='Contact']")
     public WebElement contact;
@@ -199,6 +188,47 @@ public class HomePage {
     public WebElement AlaertConfirmPassword;
     @FindBy(xpath = "//div[contains(text(),'You are registered successfully.')]")
     public  WebElement successfully;
+
+    //US_012 M.Eren //
+    @FindBy(id = "dropdown-basic-button")
+    public WebElement isimDropDown;
+    @FindBy(xpath = "//*[text()='Reservations']")
+    public WebElement dropDownReservations;
+    @FindBy(xpath = "//*[text()='Profile']")
+    public WebElement dropDownProfile;
+    @FindBy(xpath = "//*[text()='Logout']")
+    public WebElement dropDownLogout;
+    @FindBy(xpath = "//div[@class='ajs-header']")
+    public WebElement LogoutSorusuElementi;
+    @FindBy(xpath = "//*[text()='customer@bluerentalcars.com']")
+    public WebElement profilSayEmailYaziElementi;
+    @FindBy(name = "firstName")
+    public WebElement profilSayFirstnameTextBox;
+    @FindBy(name = "lastName")
+    public WebElement profilSayLastNameTextBox;
+    @FindBy(name = "phoneNumber")
+    public WebElement profilSayPhoneNumberTextBox;
+    @FindBy(xpath = "//input[@placeholder='Enter email']")
+    public WebElement profilSayEmailTextBox;
+    @FindBy(name = "address")
+    public WebElement profilSayAdressTextBox;
+    @FindBy(name = "zipCode")
+    public WebElement profilSayZipCodeTextBox;
+    @FindBy(xpath = "//button[text()='Save']")
+    public WebElement profilSaySaveButton;
+    @FindBy(xpath = "//div[text()='Your profile updated successfully']")
+    public WebElement profileUpdatedSuccesfully;
+    @FindBy(xpath = "//input[@name='oldPassword']")
+    public WebElement profilSayOldPassword;
+    @FindBy(xpath = "//input[@name='newPassword']")
+    public WebElement profilSayNewPassword;
+    @FindBy(xpath = "//input[@name='confirmPassword']")
+    public WebElement profilSayConfirmPassword;
+    @FindBy(xpath = "//button[text()='Update Password']")
+    public WebElement updatePasswordButton;
+    @FindBy(xpath = "//div[text()='Your password was updated successfully']")
+    public WebElement passwordUpdateSuccessfulAlert;
+
     //seçkin
     @FindBy(xpath ="//div[@class='section-title']" )
     public WebElement customerServices;
