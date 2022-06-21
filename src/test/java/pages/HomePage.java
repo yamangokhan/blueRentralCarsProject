@@ -8,6 +8,7 @@ public class HomePage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
     //US_008 Sule Jasmina  //
+    //deneme
     @FindBy(xpath = "//*[text()='Complete Reservation']")
     public WebElement completeReservation;
     @FindBy(xpath = "//b[contains(text(),'Name')]")
