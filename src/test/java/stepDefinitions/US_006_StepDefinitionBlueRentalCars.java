@@ -12,7 +12,7 @@ import utilities.Driver;
 
         @Given("kullanici {string} sitesine gider")
         public void kullanici_sitesine_gider(String string) {
-            Driver.getDriver().get(ConfigReader.getProperty("brcUrl"));
+            Driver.getDriver().get(ConfigReader.getProperty("BlueRentaCarURL"));
         }
 
         @Given("Kullanıcı anasayfada bulunan Select a car menusunun gorunur oldugunu test eder")

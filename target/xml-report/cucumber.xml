@@ -1,85 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="24.115">
-    <testcase classname="US001 kullanici anasayfada login olmadan arac secmek ister" name="TC001 kullanici ana sayfada login olmadan arac rezervesyon islemlerini gerceklestirebilmeli" time="2.895">
-        <failure message="null value in entry: url=null" type="java.lang.NullPointerException">
-            <![CDATA[Given kullanici "BlueRentaCarURL" sitesine gider............................failed
-And user select a car menusunun fonksiyonel oldugunu test eder..............skipped
-And kullanici 6 saniye bekler...............................................skipped
-And user pick up satirina veri giris yapabilmeli............................skipped
-And user drop off satirina veri giris yapabilmeli...........................skipped
-And user Pick up date bolumune giris yapabilmeli............................skipped
-And user Pick up  time bolumune giris yapılabilmeli.........................skipped
-And user drop off  date bolumune giris yapılabilmeli........................skipped
-Then user drop off time bolumune giris yapılabilmeli........................skipped
-Then user Contınue Reservation Butonuna tıklayabilmeli......................skipped
-Then user "Please first login" yazısını görebilirligini kontrol eder........skipped
-
-StackTrace:
-java.lang.NullPointerException: null value in entry: url=null
-	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:33)
-	at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:43)
-	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:81)
-	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:128)
-	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:76)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:330)
-	at stepDefinitions.US_006_StepDefinitionBlueRentalCars.kullanici_sitesine_gider(US_006_StepDefinitionBlueRentalCars.java:15)
-	at ✽.kullanici "BlueRentaCarURL" sitesine gider(file:///C:/Users/Lenovo/IdeaProjects/blueRentralCarsProject/src/test/resources/features/US_001_Kayit.feature:7)
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="36.12">
+    <testcase classname="US005 Kullanıcı başarız arac reservasyon işlemini test edebilmeli" name="TC01 Kullanıcı başarız arac reservasyon işlemini test edebilmeli" time="34.891">
+        <system-out>
+            <![CDATA[Given kullanici "BlueRentaCarURL" sitesine gider............................passed
+And kullanici dropdown butonundan araç seçer................................passed
+And kullanici Pick up satırından kayıtlı yer seçer..........................passed
+Then kullanici Drop Off satırından kayıtlı yer seçer........................passed
+Then kullanici Pick up tarih bölümüne takvimden tarih seçer.................passed
+Then kullanici Pick up saat bölümüne takvimden saat seçer...................passed
+Then kullanici Drop Off tarih bölümüne takvimden tarih seçer................passed
+And kullanici Drop Off saat bölümüne takvimden saat seçer...................passed
+And kullanici Contınue Reservation Butonuna tıklar..........................passed
+Then Kullanıcı başarız işlem sonrası " Please first Login" uyarı mesajını görür.passed
 ]]>
-        </failure>
-    </testcase>
-    <testcase classname="US006 kullanici profil sayfasini kontrol edebilir" name="TC01 kullanici dropdown menusunu kullanabilir" time="20.997">
-        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[text()='Please first login']&quot;}&#10;  (Session info: chrome=103.0.5060.66)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.1.3', revision: '7b1ebf28ef'&#10;System info: host: 'DESKTOP-2EU3NOB', ip: '192.168.1.23', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [88d15a819063fb36638f00406a3c72a7, findElement {using=xpath, value=//*[text()='Please first login']}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.66, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59579}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59579/devtoo..., se:cdpVersion: 103.0.5060.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 88d15a819063fb36638f00406a3c72a7" type="org.openqa.selenium.NoSuchElementException">
-            <![CDATA[Given kullanici "BlueRentaCarURL" sitesine giderr...........................passed
-Given Kullanıcı anasayfada bulunan Select a car menusunun gorunur oldugunu test eder.passed
-Given kullanici select a car butonuna basar.................................passed
-Given kullanici select a car menusunden araba secer.........................passed
-Given Kullanıcı anasayfada bulunan pick up satirinin gorunur oldugunu test eder.passed
-Given kullanici pick up satirina kayitli yer secer..........................passed
-Given Kullanıcı anasayfada bulunan Drop Off satirinin gorunur oldugunu test eder.passed
-Given kullanici Drop Off satirina kayitli yer secer.........................passed
-Given Kullanıcı anasayfada bulunan pickUpDate satirinin gorunur oldugunu test eder.passed
-Given kullanici pickUpDate satirina tarih girer.............................passed
-Given Kullanıcı anasayfada bulunan PickUpTime satirinin gorunur oldugunu test eder.passed
-Given kullanici PickUpTime satirina kayitli saat secer......................passed
-Given Kullanıcı anasayfada bulunan DropOffDate satirinin gorunur oldugunu test eder.passed
-Given kullanici DropOffTime satirina tarih secer............................passed
-Given Kullanıcı anasayfada bulunan DropOffTime satirinin gorunur oldugunu test eder.passed
-Given kullanici DropOffTime satirina  saat secer............................passed
-Given Kullanıcı anasayfada bulunan Continue Reservation satirinin gorunur oldugunu test eder.passed
-Given kullanici Continue Reservation butonuna tiklar........................passed
-Given pleaseFirstLogin gorunur oldugunu test eder...........................failed
-
-StackTrace:
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[text()='Please first login']"}
-  (Session info: chrome=103.0.5060.66)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.3', revision: '7b1ebf28ef'
-System info: host: 'DESKTOP-2EU3NOB', ip: '192.168.1.23', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [88d15a819063fb36638f00406a3c72a7, findElement {using=xpath, value=//*[text()='Please first login']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.66, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59579}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59579/devtoo..., se:cdpVersion: 103.0.5060.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 88d15a819063fb36638f00406a3c72a7
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy26.isEnabled(Unknown Source)
-	at stepDefinitions.US_006_StepDefinitionBlueRentalCars.pleasefirstloginGorunurOldugunuTestEder(US_006_StepDefinitionBlueRentalCars.java:132)
-	at ✽.pleaseFirstLogin gorunur oldugunu test eder(file:///C:/Users/Lenovo/IdeaProjects/blueRentralCarsProject/src/test/resources/features/US_006BlueRentalCars.feature:23)
-]]>
-        </failure>
+        </system-out>
     </testcase>
 </testsuite>

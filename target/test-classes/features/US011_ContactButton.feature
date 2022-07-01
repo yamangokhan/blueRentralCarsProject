@@ -24,3 +24,4 @@ Feature: US011 kullanici contactUs sayfasini kontrol edebilir
     Then kullanici name,phone,emailaddress,comments textbox'ların tiklanabilir oldugunu ve veri girildgini dogrular
     And  kullanici Send buttonun görünür oldugunu ve tiklanabilir oldugunu test eder
     And  kullanici gönderilen mailin dogrulugunu test eder
+    And sayfayi kapatir

@@ -188,6 +188,47 @@ public class HomePage {
     public WebElement AlaertConfirmPassword;
     @FindBy(xpath = "//div[contains(text(),'You are registered successfully.')]")
     public  WebElement successfully;
+
+    //US_012 M.Eren //
+    @FindBy(id = "dropdown-basic-button")
+    public WebElement isimDropDown;
+    @FindBy(xpath = "//*[text()='Reservations']")
+    public WebElement dropDownReservations;
+    @FindBy(xpath = "//*[text()='Profile']")
+    public WebElement dropDownProfile;
+    @FindBy(xpath = "//*[text()='Logout']")
+    public WebElement dropDownLogout;
+    @FindBy(xpath = "//div[@class='ajs-header']")
+    public WebElement LogoutSorusuElementi;
+    @FindBy(xpath = "//*[text()='customer@bluerentalcars.com']")
+    public WebElement profilSayEmailYaziElementi;
+    @FindBy(name = "firstName")
+    public WebElement profilSayFirstnameTextBox;
+    @FindBy(name = "lastName")
+    public WebElement profilSayLastNameTextBox;
+    @FindBy(name = "phoneNumber")
+    public WebElement profilSayPhoneNumberTextBox;
+    @FindBy(xpath = "//input[@placeholder='Enter email']")
+    public WebElement profilSayEmailTextBox;
+    @FindBy(name = "address")
+    public WebElement profilSayAdressTextBox;
+    @FindBy(name = "zipCode")
+    public WebElement profilSayZipCodeTextBox;
+    @FindBy(xpath = "//button[text()='Save']")
+    public WebElement profilSaySaveButton;
+    @FindBy(xpath = "//div[text()='Your profile updated successfully']")
+    public WebElement profileUpdatedSuccesfully;
+    @FindBy(xpath = "//input[@name='oldPassword']")
+    public WebElement profilSayOldPassword;
+    @FindBy(xpath = "//input[@name='newPassword']")
+    public WebElement profilSayNewPassword;
+    @FindBy(xpath = "//input[@name='confirmPassword']")
+    public WebElement profilSayConfirmPassword;
+    @FindBy(xpath = "//button[text()='Update Password']")
+    public WebElement updatePasswordButton;
+    @FindBy(xpath = "//div[text()='Your password was updated successfully']")
+    public WebElement passwordUpdateSuccessfulAlert;
+
     //seçkin
     @FindBy(xpath ="//div[@class='section-title']" )
     public WebElement customerServices;
